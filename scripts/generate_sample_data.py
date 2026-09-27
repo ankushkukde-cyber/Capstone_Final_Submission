@@ -1,8 +1,8 @@
 import csv
 import random
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
-import time
 
 RAW = Path(__file__).resolve().parents[1] / "data" / "raw"
 SEED = random.seed(int(time.time()))
