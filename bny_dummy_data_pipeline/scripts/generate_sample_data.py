@@ -2,9 +2,10 @@ import csv
 import random
 from datetime import datetime, timedelta
 from pathlib import Path
+import time
 
 RAW = Path(__file__).resolve().parents[1] / "data" / "raw"
-SEED = 20260924
+SEED = random.seed(int(time.time()))
 CATEGORIES = ["GROCERY", "FUEL", "ELECTRONICS", "TRAVEL", "APPAREL", "PHARMA", "RESTAURANT"]
 CHANNELS = ["POS", "ONLINE", "QR"]
 RISKS = ["LOW", "MEDIUM", "HIGH"]
